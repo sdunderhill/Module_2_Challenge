@@ -8,13 +8,15 @@ I originally received data from Steve. He was helping his parents look over the 
 The stocks all faired better in 2017 than in 2018. All of the stocks had a major decline in return in 2018 compared to 2017.  Only 2 stocks showed a positive return in 2018. Neither of which were the stock that Steve's parents chose. 
 
 2017 had only one stock with a negative return.
+
 ![2017_returns](https://user-images.githubusercontent.com/81715217/118377866-87523b80-b595-11eb-8e9a-c44f989e7115.png)
 
 2018 only had two positive returns
+
 ![2018_returns](https://user-images.githubusercontent.com/81715217/118377881-a224b000-b595-11eb-8e3f-9c16deeed16a.png)
 
 
-###Comparison of run time between scripts
+### Comparison of run time between scripts
 
 My orginal script ran perfectly however it took longer to run than desired. I was given an outline on how to refactor it. 
 The original script ran in 0.91 and 0.92 seconds. While that is a decent amount of time, if I had a larger dataset it would take much longer to run. 
@@ -33,7 +35,7 @@ The refactored script ran in a much quicker time!
 2018 refactored runtime of 0.15 seconds
 ![VBA_Challenge_2018](https://user-images.githubusercontent.com/81715217/118378213-c5e8f580-b597-11eb-92e9-69ec432d6f13.png)
 
-###The refactored part of the code
+### The refactored part of the code
 
 '1a) Create a ticker Index
     Dim tickerIndex As Single
@@ -92,16 +94,16 @@ The refactored script ran in a much quicker time!
         Cells(4 + i, 3).Value = tickerEndingPrices(i) / tickerStartingPrices(i) - 1
         
 
-##Summary
+## Summary
 
-###Advantages/Disadvantages of refactoring code
+### Advantages/Disadvantages of refactoring code
 
 Refactoring code is a good way to reevaluate your code to make it run faster. Refactoring can also make your code run even if the dataset is changed.
 If you're not careful though, refactoring can create bugs that weren't there in the original code. For instance, I accidentally added an "s" to tickersIndex 
 in 2 places in the refactored code that made it not run. It was time consuming debugging it. If I was on a more strict deadline that would have been very
 problematic.
 
-###Advantages/Disadvantages of refactoring this VBA code
+### Advantages/Disadvantages of refactoring this VBA code
 
 Refactoring the code made it run quite a bit faster and therefore more effecient if per say we are give a larger dataset for 2019. 
 As a stated before, a disadvantage was the 3 hours it took me to realize I had added an "s" accidentally. Another advantage is that it gave me a
